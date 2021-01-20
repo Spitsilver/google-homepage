@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Google</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <nav class="nav">
+                    <ul class="left-nav">
+                        <li><a class="nav-links" href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                        <li><a class="nav-links" href="https://store.google.com/CA/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Store</a></li>
+                    </ul>
+
+                    <ul class="right-nav">
+                        <li><a class="nav-links" href="https://www.google.com/intl/en-GB/gmail/about/">Gmail</a></li>
+                        <li><a class = "nav-links" href=https://www.google.ca/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+                        <li><i class="material-icons" id="app-icon">apps</i></li>
+                        <!-- DO I NEED TO ADD A APPS ICON BIT AFTER MATERIAL-ICONS --- can edit the css w/ .material-icons.apps-icon - would be the same w/ the search and mic logo down below -->
+                        <!-- FIGURE THIS ONE OUT - DONT NEED IT TO BE PART OF NAV-LINKS CLASS BC ITS GREY NOT BLACK - MAKE IT A CLASS AND HAVE A HOVER FEATURE THAT TURNS IT BLACK - IDK - PROB WOULD WORK W/ THE EDIT CSS BIT FROM LINE ABOVE -->
+                        <li><a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fclient%3Dfirefox-b-d&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"></a>
+                        <button id="signin" class="signin-button">Sign In</button></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="main">
+                <div class="main-logo">
+                    <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+                </div>
+
+                <form class="search-form">
+                    <div class="form-group">
+                        <div class="form-logo-search">
+                            <i class="material-icons" id="search-icon">search</i>
+                        </div>
+
+                        <div class="form-input">
+                            <input type="text" id="search" name="search" placeholder="Search Google or type a URL">
+                        </div>
+
+                        <div class="form-logo-mic">
+                            <i class="material-icons" id="mic-icon">mic</i>
+                        </div>
+                    </div>
+                    <!-- SHOULD ACTUALLY MAKE A SEPARATE CLASS W/ THE ICONS DOING BACKGROUND IMAGE AND SUCH SO THAT YOU CAN GET THE COLORFUL MIC - MAYBE DO SEARCH THIS WAY AND A MIC CLASS? -->
+                </form>
+
+                <div class="search-buttons">
+                    <button id="google-search" name="google-search" class="google-search-button">Google Search</button>
+                    <button id="lucky" name="lucky" class="lucky-button">I'm Feeling Lucky</button>
+                </div>
+
+                <div class="french">
+                    Google offered in:  
+                    <a href="https://www.google.ca/setprefs?sig=0_8dVdE9_cqL_rvXWUe_Q93N2j-Mo%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwjrhN6UsKnuAhXRGFkFHTyCCeUQ2ZgBCBE">Français</a>
+                </div>
+            </main>
+
+            <div class="above-footer">
+                <p>Canada</p>
+            </div>
+
+            <footer>
+                <ul class="right-footer">
+                    <li><a class="footer-links" href="https://ads.google.com/intl/en_ca/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000059-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                    <li><a class="footer-links" href="https://smallbusiness.withgoogle.com/intl/en_ca/help/#!/">Business</a></li>
+                    <li><a class="footer-links" href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                </ul>
+
+                <ul class="left-footer">
+                    <li><a class="footer-links" href="https://policies.google.com/privacy?hl=en-CA&fg=1">Privacy</a></li>
+                    <li><a class="footer-links" href="https://policies.google.com/terms?hl=en-CA&fg=1">Terms</a></li>
+                    <li><a class="footer-links" href="https://www.google.com/preferences?hl=en&client=firefox-b-d">Settings</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
